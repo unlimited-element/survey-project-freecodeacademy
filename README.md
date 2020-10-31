@@ -1,2 +1,2 @@
-# survey-project-freecodeacademy
-Survey html page for freecodeacademy.org
+# survey-project-freecodecamp
+Survey html page for freecodecamp.org
