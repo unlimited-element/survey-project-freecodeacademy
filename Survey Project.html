@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coffee Quality Survey</title><br>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script><br>
+  <link href='https://fonts.googleapis.com/css?family=Galada' rel='stylesheet'>
+<style>
+  body {
+    color: #ab6528;
+    font-family: 'Galada';
+    font-size: 1.5rem;
+    display: block;
+    border: 15px outset #ab6528;
+    text-align: center;
+    margin: 100px;
+    padding: 0px 10px 100px;
+    background-image: linear-gradient(to bottom right,  brown, black);
+  }
+  #dropdown {
+    border-width: thick;
+    border-style: groove;
+    border-radius: 20%;
+    border-color: #ab6528
+  }
+  #name {
+    border-width: thick;
+    border-style: groove;
+    border-radius: 20%;
+    border-color: #ab6528
+  }
+  #email {
+    border-width: thick;
+    border-style: groove;
+    border-radius: 20%;
+    border-color: #ab6528
+  }
+  #number {
+    border-width: thick;
+    border-style: groove;
+    border-radius: 20%;
+    border-color: #ab6528
+  }
+  #submit {
+    background-color: #ab6528;
+    font-size: 1.5rem;
+    margin: 20px auto;
+    border-radius: 30%;
+    border-style: inset;
+    border-color: white;
+  }
+
+</style>
+</head>
+<body>
+
+<div>
+  <h1 id="title">Coffee Quality Survey</h1>
+  <p id="description">Your response will help us serve you better</p>
+  <form id="survey-form">
+    <label id="name-label">Name</label>
+    <input type="text"
+           name="name"
+           id="name"
+           placeholder="Name (Required)"
+           required>
+    <label id="email-label">Email</label>
+    <input type="email"
+           name="email"
+           id="email"
+           placeholder="Enter Address (Required)"
+           required>
+    <label id="number-label">Age</label>
+    <input type="number"
+           name="number"
+           id="number"
+           min="10"
+           max="110"
+           placeholder="Optional"><br>
+      <p>How would you describe our coffee?</p>
+      <select id="dropdown" required>
+             <option disabled selected value>Select Description</option>
+             <option value="Tasty">Tasty</option>
+             <option value="Average">Average</option>
+             <option value="Very Bad">Very Bad</option>
+      </select>
+      <p>How likely are you to recommend our coffee?</p>
+      <label id="very" for="very">Very</label>
+          <input type="radio"
+                 name="recommendation"
+                 value="very"
+                 checked>
+     <label id="maybe" for="maybe">Maybe</label>
+         <input type="radio"
+                name="recommendation"
+                value="maybe">
+    <label id="noway" for="noway">No Way</label>
+         <input type="radio"
+                name="recommendation"
+                value="noway">
+    <p>How frequently do you drink coffee? (Check one)</p>
+   <label id="multiple" for="multiple">Multiple Times Per Day</label>
+          <input type="checkbox"
+                 name="frequency"
+                 value="multiple">
+   <label id="once" for="once">Once Daily</label>
+          <input type="checkbox"
+                 name="frequency"
+                 value="once">
+   <label id="weekly" for="weekly">Multiple Times Per Week</label>
+          <input type="checkbox"
+                 name="frequency"
+                 value="weekly">
+   <label id="rarely" for="rarely">Rarely</label>
+          <input type="checkbox"
+                 name="frequency"
+                 value="rarely">
+   <p>If you have any feedback regarding how we can improve our coffee or customer service, please use the space below.</p>
+          <textarea name="comments" id="comments" cols="100" placeholder="Comment Here"></textarea>
+    <br>
+   <button type="submit"
+           id="submit">
+           Submit
+  </button>
+  </form>
+</div>
+</body>
+</html>
